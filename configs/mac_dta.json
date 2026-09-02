@@ -1,0 +1,30 @@
+{
+  "name": "MAC-DTA full model",
+  "description": "Final KAN-head model with mutation indicators, local branch, KD Guard and weighted pairwise ranking.",
+  "seed": 123,
+  "arguments": {
+    "dataset": "davis",
+    "csv_path": "data/davis/davis_processed_fixed.csv",
+    "lr": 0.0001,
+    "epochs": 180,
+    "batch_size": 128,
+    "num_workers": 4,
+    "cliff_lambda": 0.1,
+    "cliff_margin": 0.84,
+    "cliff_batch_size": 16,
+    "cliff_warmup_epochs": 3,
+    "cliff_rampup_epochs": 20,
+    "cliff_freq": 10,
+    "patience": 30,
+    "local_k_hops": 2,
+    "residual_gate_scale": 0.1,
+    "teacher_pred_file": "data/davis/teacher_predictions.npy",
+    "kd_lambda": 1.0,
+    "kd_noncliff_only": true,
+    "train_pair_csv": "data/davis/augmented_pairs_near_wtmut.csv",
+    "eval_pair_csv": "data/davis/cliff_pairs.csv",
+    "pair_sampling": "uniform",
+    "save_test_predictions": true
+  },
+  "flags": []
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Without pairwise ranking loss",
+  "description": "Disables weighted WT-mutant pairwise ranking supervision.",
+  "flags": ["no_cliff_loss"]
+}

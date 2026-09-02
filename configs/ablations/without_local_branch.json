@@ -1,0 +1,5 @@
+{
+  "name": "Without mutation-centred local branch",
+  "description": "Disables the local branch and its conditioned gating.",
+  "flags": ["no_local_branch"]
+}

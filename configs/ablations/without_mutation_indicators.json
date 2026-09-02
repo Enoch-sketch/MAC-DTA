@@ -1,0 +1,5 @@
+{
+  "name": "Without mutation indicators",
+  "description": "Disables direct mutation-indicator injection in both sequence and graph encoders.",
+  "flags": ["no_seq_mut_inject", "no_graph_mut_inject"]
+}

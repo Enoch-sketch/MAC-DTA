@@ -1,0 +1,8 @@
+{
+  "name": "Without knowledge distillation",
+  "description": "Removes the frozen-teacher KD Guard loss.",
+  "arguments": {
+    "teacher_pred_file": null,
+    "kd_noncliff_only": false
+  }
+}
